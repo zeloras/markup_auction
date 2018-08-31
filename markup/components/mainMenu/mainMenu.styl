@@ -24,3 +24,40 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .main-menu {
+        padding-right: 35px;
+        margin-left: -15px;
+
+        &__item {
+            padding-right: 5px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main-menu {
+        margin: 0;
+        padding: 20px 5px 10px 25px;
+
+        &__list {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 100%;
+            padding: 2px 0;
+            margin-bottom: 5px;
+        }
+
+        &__link {
+            display: block;
+            border: 0;
+            &:hover {
+                border: 0;
+            }
+        }
+    }
+}

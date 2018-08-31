@@ -43,3 +43,41 @@
         font-weight: 700;
     }
 }
+
+@media (max-width: 1200px) {
+    .footer {
+        &__menu.main-menu {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        text-align: center;
+
+        &__logo {
+            padding-bottom: 30px;
+        }
+
+        &__navigation {
+            flex-direction: column;
+        }
+
+        &__menu.main-menu {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding-top: 50px;
+
+        &__title {
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+    }
+}

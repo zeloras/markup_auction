@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+        <header class="page__header">
+            {{> header/header}}
+        </header>
+        <section class="page__wrapper">
+            <div class="container page__wrap_background_white">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="h1 page__title">Часто задаваемые вопросы</h1>
+                        <div class="page__undertitle">
+                            У Вас возник вопрос? Ответ на него вы сможете найти в этом разделе. 
+                        </div>
+                        {{> faq/faq}}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="paymethods">
+            {{> paymethods/paymethods}}
+        </div>
+        <footer class="page__footer">
+            {{> footer/footer}}
+        </footer>
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>
