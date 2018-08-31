@@ -27,7 +27,14 @@ html, body {
     height: 100%;
 }
 
-.page__footer, .page__header {
+.page__footer {
+    background-image: url('%=static=%/general/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1b0135;
+}
+
+.page__header {
     box-shadow: 0 0 53px rgba(0,0,0,0.55);
     background-color: #1b0135;
 }
@@ -58,10 +65,15 @@ html, body {
 .button {
     border-radius: 22px;
     box-shadow: 0 0 6px rgba(28,196,238,0.6);
-    background-color: transparent;
+    background-color: rgba(28, 196, 238, 0);
     border: 1px solid #1bc3ed;
     padding: 12px 20px;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 700;
+    transition: background-color 400ms;
+
+    &:hover {
+        background-color: rgba(28, 196, 238, 0.8);
+    }
 }

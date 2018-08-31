@@ -11,8 +11,13 @@
     &__link {
         font-size: 15px;
         letter-spacing: 1px;
-        color: #1cc4ee;
+        color: rgba(28, 196, 238, 1);
         font-weight: 700;
+        transition: color 400ms, border-bottom 400ms;
+
+        &:hover {
+            color: rgba(28, 196, 238, 0.8);
+        }
     }
 }
 
@@ -22,4 +27,42 @@
 
 .footer__navigation .auth-links {
     align-self: center;
+    position: relative;
+    padding-left: 35px;
+
+    &__item {
+        position: relative;
+
+        &:first-of-type:after{
+            content: '';
+            border-left: 1px solid #1c3b70;
+            position: absolute;
+            display: block;
+            padding: 6px 1px;
+            right: 0;
+            top: 4px;
+        }
+    }
+
+    &__link {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #1c3b70;
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        background: url('%=static=%/general/arrow_right.png') no-repeat;
+        padding: 15px;
+        top: -7px;
+    }
+
+    &:after {
+        left: 8px;
+    }
 }

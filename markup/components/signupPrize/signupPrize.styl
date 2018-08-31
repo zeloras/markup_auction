@@ -5,10 +5,44 @@
         font-size: 20px;
         letter-spacing: 2px;
         font-weight: 700;
+        padding-bottom: 20px;
     }
 
     &__actions {
         max-width: 250px;
         text-align: center;
+        align-self: center;
     }
+
+    &__button {
+        box-shadow: 0 0 13px rgba(28,196,238,0.6);
+        background-color: rgba(28, 196, 238, 1);
+        width: 100%;
+        transition: background-color 400ms;
+
+        &:hover {
+            background-color: rgba(28, 196, 238, 0.8);
+        }
+    }
+
+    &__coin {
+        position: relative;
+        padding-left: 15px;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            left: 15px;
+            background: url('%=static=%/general/arrow_right.png') no-repeat;
+            padding: 15px;
+            top: 50px;
+        }
+
+        &:after {
+            left: 23px;
+        }
+    }
+}
+
+.footer__contacts .signup-prize {
+    padding-left: 15px;
 }
