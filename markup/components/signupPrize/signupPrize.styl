@@ -46,3 +46,40 @@
 .footer__contacts .signup-prize {
     padding-left: 15px;
 }
+
+@media (max-width: 1200px) {
+    .signup-prize {
+        &__title {
+            font-size: 15px;
+        }
+
+        &__actions {
+            max-width: 205px;
+        }
+
+        &__button {
+            font-size: 15px;
+        }
+
+        &__coin {
+            img {
+                max-width: 135px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .signup-prize {
+        justify-content: center;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup-prize {
+        &__coin {
+            display: none;
+        }
+    }
+}

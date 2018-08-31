@@ -1,0 +1,42 @@
+.faq {
+    padding-top: 45px;
+    &__item {
+        border-radius: 22px;
+        box-shadow: 0 0 13px rgba(113,195,236,0.33);
+        background-color: #ffffff;
+        margin-bottom: 20px;
+
+        &.active .faq__title {
+            background: url('%=static=%/general/minus.png') no-repeat;
+            background-position: 15px;
+        }
+
+        &.active .faq__text {
+            display: block;
+        }
+    }
+
+    &__title {
+        background: url('%=static=%/general/plus.png') no-repeat;
+        position: relative;
+        z-index: 1;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 13px 40px;
+        color: rgb(24,1,50);
+        background-position: 15px;
+        cursor: pointer;
+    }
+
+    &__text {
+        border-radius: 10px;
+        background-color: #ffffff;
+        position: relative;
+        padding-top 30px;
+        padding-left: 35px;
+        color: rgb(24,1,50);
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+        display: none;
+    }
+}
